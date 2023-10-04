@@ -1,0 +1,70 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Styles for FlashCard component */
+/* Styles for FlashCard component */
+.flash-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #fff;
+  width: 300px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the component horizontally */
+}
+
+/* Styles for buttons within FlashCard component */
+.flash-card .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem; /* Add some space between buttons and content */
+}
+
+.flash-card .buttons button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Additional styles for Guess component can be added here */

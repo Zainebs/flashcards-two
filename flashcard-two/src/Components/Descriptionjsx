@@ -1,0 +1,40 @@
+const Description = [
+  {
+    Question: "What is the term for looking for errors in computer science called?",
+    Answer: "Debugging",
+    
+  },
+  {
+    Question: "What programming language is known for its simplicity and readability?",
+    Answer: "Python",
+   
+  },
+  {
+    Question: "What does HTML stand for?",
+    Answer: "Hypertext Markup Language",
+   
+  },
+  {
+    Question: "What is the most widely used version control system in software development?",
+    Answer: "Git",
+    
+  },
+  {
+    Question: "What is an algorithm?",
+    Answer: "A step-by-step procedure for solving a problem or accomplishing a task.",
+    
+  },
+  {
+    Question: "What is the purpose of a compiler?",
+    Answer: "To translate high-level programming code into machine code that can be executed by a computer.",
+    
+  },
+  {
+    Question: "What is cloud computing?",
+    Answer: "A technology that allows users to access and use computing resources (e.g., servers, storage, databases) over the internet.",
+    
+  },
+  // Add more computer science flashcards as needed
+];
+
+export default Description;

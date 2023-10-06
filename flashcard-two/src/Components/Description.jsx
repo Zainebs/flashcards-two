@@ -34,6 +34,27 @@ const Description = [
     Answer: "A technology that allows users to access and use computing resources (e.g., servers, storage, databases) over the internet.",
     
   },
+  {
+      Question: " In 1995, 37% of computer scientists were women. Today, it’s only ___.",
+      Answer: "24%"
+  },
+  {
+    Question: " Grace Hopper is often associated with coining what term, which refers to a programming error?",
+    Answer: "bug"
+  },
+  {
+    Question: "Who is often credited as the world's first computer programmer and known for her work on Babbage's Analytical Engine?",
+    Answer: "Ada Lovelace"
+  },
+  {
+  Question:  "How many women worked on the Manhattan Project?",
+  Answer: "640 women about 11 percent of the total workforce."
+  },
+  {
+    Question: "According to Abby McCain’s article,  % of girls expressed a desire to have a career in STEM.",
+    Answer: "74%"
+  }
+
   // Add more computer science flashcards as needed
 ];
 

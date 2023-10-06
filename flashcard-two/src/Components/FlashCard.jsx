@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
-import Description from './Descriptionjsx'; // Use your 'Description' array
+import Description from './Description'; // Import your 'Description' array
 import Guess from './guess.jsx'; // Import the Guess component
 
 const FlashCard = () => {
@@ -43,24 +43,18 @@ const FlashCard = () => {
   useEffect(() => {
     // Initialize the component by setting the first card
     setCurrentCardIndex(0);
-    console.log(Description);
-    console.log(currentCardIndex);
   }, []);
 
   return (
     <div>
-      <div className="buttons">
-        <button onClick={showPreviousCard}>&#8592;</button> {/* Left arrow */}
-        <button onClick={showNextCard}>&#8594;</button> {/* Right arrow */}
-      </div>
-      <button onClick={toggleShuffle}>Shuffled Cards</button>
+      <div>Flashcards</div>
+     
       <Guess
-        question={Description[currentCardIndex].question}
-        answer={Description[currentCardIndex].answer}
+        question={Description[currentCardIndex].Question}
+        answer={Description[currentCardIndex].Answer}
       />
     </div>
   );
 };
 
 export default FlashCard;
-

@@ -3,35 +3,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: pink !important;
+ 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 .card {
   padding: 2em;
@@ -52,19 +27,68 @@
 }
 
 /* Styles for buttons within FlashCard component */
-.flash-card .buttons {
+.guess .buttons {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem; /* Add some space between buttons and content */
 }
 
-.flash-card .buttons button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px; /* Adjust font size as needed */
+
+.card-front {
+  border: 2px solid #fff9f9; /* Add a border with your preferred color and width */
+  padding: 10px; /* Add padding to create spacing between content and border */
+ border-radius: 8px;
+ margin: 2em;
+ 
 }
 
-/* Additional styles for Guess component can be added here */
+/* Add styles for when the card is flipped (optional) */
+.card-front.flipped {
+  border: none; /* Remove the border when the card is flipped, if desired */
+  /* Add any other styles for the flipped card-front class */
+}
+
+
+
+.guess {
+  display: inline-block;
+  perspective: 1000px;
+}
+
+.card-front,
+.card-back {
+  /* Styles for both card front and card back */
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  transform-style: preserve-3d;
+  text-align: center;
+  overflow: hidden;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.card-front.correct {
+  /* Styles for correct guess */
+  background-color: #00ff00; /* Green */
+  color: #ffffff; /* White text for visibility */
+}
+
+.card-front.incorrect {
+  /* Styles for incorrect guess */
+  background-color: #ff0000; /* Red */
+  color: #ffffff; /* White text for visibility */
+}
+
+.card-back {
+  /* Styles for the card back (answer side) */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
